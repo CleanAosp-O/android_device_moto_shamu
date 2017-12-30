@@ -151,7 +151,7 @@ PRODUCT_PACKAGES += \
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-#    LiveWallpapersPicker \
+    LiveWallpapersPicker \
     librs_jni
 
 PRODUCT_PACKAGES += \
@@ -420,8 +420,8 @@ $(call inherit-product-if-exists, hardware/qcom/msm8x84/msm8x84.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x84/msm8x84-gpu-vendor.mk)
 
 # setup scheduler tunable
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.perf.cores_online=2
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    ro.qualcomm.perf.cores_online=2
 
 # Vibrator
 PRODUCT_PACKAGES += \
